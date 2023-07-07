@@ -402,7 +402,6 @@ class WelcomeScreen extends StatefulWidget {
 class _WelcomeScreenState extends State<WelcomeScreen> {
   final Future<SharedPreferences> _prefs  = SharedPreferences.getInstance();
 
-  String supplierId='';
 @override
   void initState() {
 
@@ -434,7 +433,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   //     builder: (BuildContext context) => const CustomerLogin(),
                   //   ),
                   // );
-                  supplierId !=''?  Get.offAllNamed(AppRoutes.supplierHomeScreen):
+                  controller.supplierId !=''?  Get.offAllNamed(AppRoutes.supplierHomeScreen):
                   Get.offAllNamed(AppRoutes.supplierLogin);
                 },),
                 SizedBox(height: h*.01),

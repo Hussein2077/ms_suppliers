@@ -7,5 +7,7 @@ class AppRoutes {
   static const supplierRegister = '/supplier_signup';
   static const supplierLogin = '/supplier_login';
   static const onBoarding = '/onBoarding';
+  static const datePickerScreen = '/datePickerScreen';
+
 
 }

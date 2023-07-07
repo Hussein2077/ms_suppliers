@@ -49,7 +49,7 @@ class SupplierHomeScreen extends StatelessWidget {
               elevation: 0,
               type: BottomNavigationBarType.fixed,
               selectedLabelStyle: const TextStyle(fontWeight: FontWeight.w600),
-              selectedItemColor: Colors.black,
+              selectedItemColor: AppColor1.primaryColor,
               currentIndex: controller.selectedIndex,
               items: [
                 const BottomNavigationBarItem(
@@ -75,7 +75,7 @@ class SupplierHomeScreen extends StatelessWidget {
 
                       badgeStyle: const badges.BadgeStyle(
                         padding: EdgeInsets.all(2),
-                        badgeColor: Colors.yellow,
+                        badgeColor: AppColor1.primaryColor,
                       ),
                       badgeContent: Text(
                         snapshot.data!.docs.length.toString(),

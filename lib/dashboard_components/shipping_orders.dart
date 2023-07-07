@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:ms_supplier/color.dart';
 import 'package:ms_supplier/models/supp_order_model.dart';
 
 class Shipping extends StatelessWidget {
@@ -21,7 +22,7 @@ class Shipping extends StatelessWidget {
 
         if (snapshot.connectionState == ConnectionState.waiting) {
           return const Center(
-            child: CircularProgressIndicator(),
+            child: CircularProgressIndicator(color: AppColor1.primaryColor,),
           );
         }
 

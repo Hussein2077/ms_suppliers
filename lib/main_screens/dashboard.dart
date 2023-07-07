@@ -164,10 +164,10 @@ class DashboardScreen extends StatelessWidget {
                           maxLines: 1,
                           label[index].toUpperCase(),
                           style: TextStyle(
-                              fontSize: 14,
+                              fontSize: 12,
                               color: Colors.grey.shade600,
                               fontWeight: FontWeight.w600,
-                              fontFamily: 'poppins'),
+                            ),
                         )
                       ],
                     );

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:ms_supplier/color.dart';
 import 'package:ms_supplier/utilities/app_routes.dart';
 import 'package:ms_supplier/utilities/routes.dart';
 
+import 'color.dart';
 import 'firebase_options.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -24,6 +24,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
 theme: ThemeData(
   primaryColor: AppColor1.primaryColor,
+  fontFamily: 'Poppins',
 ),
       debugShowCheckedModeBanner: false,
       initialRoute: AppRoutes.welcomeScreen,

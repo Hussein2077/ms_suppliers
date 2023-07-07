@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ms_supplier/color.dart';
 import 'package:ms_supplier/dashboard_components/delivered_orders.dart';
 import 'package:ms_supplier/dashboard_components/preparing_orders.dart';
 import 'package:ms_supplier/dashboard_components/shipping_orders.dart';
@@ -20,7 +21,7 @@ class SupplierOrders extends StatelessWidget {
             title: 'Orders',
           ),
           bottom: const TabBar(
-              indicatorColor: Colors.yellow,
+              indicatorColor: AppColor1.primaryColor,
               indicatorWeight: 8,
               tabs: [
                 RepeatedTab(label: 'Preparing'),

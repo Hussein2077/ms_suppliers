@@ -19,7 +19,8 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.0.5 <4.0.0'
+  sdk: ">=2.17.1 <3.0.0"
+
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -48,7 +49,7 @@ dependencies:
   provider: ^6.0.5
   badges: ^3.1.1
   sn_progress_dialog: ^1.1.3
-  intl: ^0.18.1
+  intl: ^0.17.0
   http: ^0.13.6
   expandable: ^5.0.1
   flutter_rating_bar: ^4.0.1
@@ -58,6 +59,14 @@ dependencies:
   hexcolor: ^3.0.1
   google_fonts: ^4.0.4
   shared_preferences: ^2.0.15
+  rename: ^2.1.1
+#  date_picker_timeline: ^1.2.3
+
+#  date_time_picker: ^2.1.0
+#  calendar_date_picker2: ^0.5.2
+#  date_picker_plus: ^1.1.3
+#  flutter_datetime_picker: ^1.5.1
+#  scroll_date_picker: ^3.7.3
 
 dev_dependencies:
   flutter_test:

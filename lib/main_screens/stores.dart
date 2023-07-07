@@ -31,10 +31,11 @@ class _StoresScreenState extends State<StoresScreen> {
               (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
             if (snapshot.hasData) {
               return GridView.builder(
+                physics: const BouncingScrollPhysics(),
                   itemCount: snapshot.data!.docs.length,
                   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                       mainAxisSpacing: 25,
-                      crossAxisSpacing: 25,
+                      crossAxisSpacing: 15,
                       crossAxisCount: 2),
                   itemBuilder: (context, index) {
                     return GestureDetector(
@@ -46,7 +47,7 @@ class _StoresScreenState extends State<StoresScreen> {
                                       suppId: snapshot.data!.docs[index]['sid'],
                                     )));
                       },
-                      child: Column(
+                    child:  Column(
                         children: [
                           Stack(
                             children: [
@@ -71,9 +72,11 @@ class _StoresScreenState extends State<StoresScreen> {
                           Text(
                               snapshot.data!.docs[index]['storename']
                                   .toLowerCase(),
+                              maxLines: 1,
+                              overflow: TextOverflow.clip,
                               style: const TextStyle(
-                                fontSize: 26,
-                                fontFamily: 'AkayaTelivigala',
+                                fontSize: 14,
+
                               ))
                         ],
                       ),

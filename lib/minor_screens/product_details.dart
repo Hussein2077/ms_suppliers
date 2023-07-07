@@ -334,7 +334,7 @@ Widget reviewsAll(var reviewsStream) {
           'This Item \n\n has no Reviews yet !',
           textAlign: TextAlign.center,
           style: TextStyle(
-              fontSize: 26,
+              fontSize: 12,
               color: Colors.blueGrey,
               fontWeight: FontWeight.bold,
               fontFamily: 'Acme',
